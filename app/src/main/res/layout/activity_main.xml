@@ -28,12 +28,14 @@
             android:layout_height="match_parent"
             android:layout_weight="1.5"
             android:hint="Sign in"
+            android:onClick="open_signIn"
             android:id="@+id/editText"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1.5"
-            android:text="Sign up"/>
+            android:text="Sign up"
+            android:onClick="open_signUp"/>
     </LinearLayout>
 </RelativeLayout>
