@@ -7,45 +7,48 @@
     tools:context="com.example.supuni.uber_app.SignUpActivity">
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/e1_name"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="34dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:hint="Enter your name" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/e2_email"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/editText4"
+        android:layout_below="@+id/e1_name"
         android:layout_marginTop="47dp"
         android:ems="10"
+        android:hint="Enter your email"
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/e3_password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText5"
+        android:layout_below="@+id/e2_email"
         android:layout_marginTop="23dp"
         android:ems="10"
+        android:hint="Enter your password"
         android:inputType="textPassword" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText6"
+        android:layout_below="@+id/e3_password"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
+        android:onClick="signUpUser"
         android:text="Register" />
 </RelativeLayout>
