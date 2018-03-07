@@ -1,6 +1,7 @@
 package com.example.supuni.uber_app;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -37,6 +38,10 @@ public class SignInActivity extends AppCompatActivity {
 
         if(email.getText().toString().equals("") || password.getText().toString().equals("")){
             Toast.makeText(getApplicationContext(),"Fields cannot be empty",Toast.LENGTH_SHORT).show();
+
+            Intent i =new Intent(SignInActivity.this,MainPageActivity.class);
+            startActivity(i);
+            finish();
         }
         else {
             auth.signInWithEmailAndPassword(email.getText().toString(),password.getText().toString())
